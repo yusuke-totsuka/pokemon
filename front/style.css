@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+h2 {
+  width: 100%;
+}
+
+.container {
+  border: 2px solid black;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.inputs_wrapper {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}

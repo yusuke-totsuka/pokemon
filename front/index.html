@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>TTK API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h2>ポケモン登録</h2>
+  <div class="inputs_wrapper">
+    <label for="pokemon_select-register">ポケモン</label>
+    <select id="pokemon_select-register" name="pokemon">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="ability_select-register">とくせい</label>
+    <select id="ability_select-register" name="ability">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="nature_select-register">せいかく</label>
+    <select id="nature_select-register" name="nature">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="item_select-register">もちもの</label>
+    <select id="item_select-register" name="item">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="move1_select-register">わざ1</label>
+    <select id="move1_select-register" name="move1">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="move2_select-register">わざ2</label>
+    <select id="move2_select-register" name="move2">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="move3_select-register">わざ3</label>
+    <select id="move3_select-register" name="move3">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="move4_select-register">わざ4</label>
+    <select id="move4_select-register" name="move4">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="effort_h_input-register">努力値H</label>
+    <input type="number" id="effort_h_input-register" name="effort_h" max="252">
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="effort_a_input-register">努力値A</label>
+    <input type="number" id="effort_a_input-register" name="effort_a" max="252">
+
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="effort_b_input-register">努力値B</label>
+    <input type="number" id="effort_b_input-register" name="effort_b" max="252">
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="effort_c_input-register">努力値C</label>
+    <input type="number" id="effort_c_input-register" name="effort_c" max="252">
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="effort_d_input-register">努力値D</label>
+    <input type="number" id="effort_d_input-register" name="effort_d" max="252">
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="effort_s_input-register">努力値S</label>
+    <input type="number" id="effort_s_input-register" name="effort_s" max="252">
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="individual_h_input-register">個体値H</label>
+    <input type="number" id="individual_h_input-register" name="individual_h" max="31">
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="individual_a_input-register">個体値A</label>
+    <input type="number" id="individual_a_input-register" name="individual_a" max="31">
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="individual_b_input-register">個体値B</label>
+    <input type="number" id="individual_b_input-register" name="individual_b" max="31">
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="individual_c_input-register">個体値C</label>
+    <input type="number" id="individual_c_input-register" name="individual_c" max="31">
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="individual_d_input-register">個体値D</label>
+    <input type="number" id="individual_d_input-register" name="individual_d" max="31">
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="individual_s_input-register">個体値S</label>
+    <input type="number" id="individual_s_input-register" name="individual_s" max="31">
+  </div>
+
+  <button type="button" id="register_pokemon_button">登録する</button>
+</div>
+
+<div class="container">
+  <h2>攻撃サイド</h2>
+
+  <div class="inputs_wrapper">
+    <label for="pokemon_select-atk">ポケモン</label>
+    <select id="pokemon_select-atk" name="pokemon-atk">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="move_select-atk">わざ</label>
+    <select id="move_select-atk" name="move-atk">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="rank_select-atk">A/Cランク</label>
+    <select id="rank_select-atk" name="rank-atk">
+      <option value="">選択してください</option>
+      <option value="6">+6</option>
+      <option value="5">+5</option>
+      <option value="4">+4</option>
+      <option value="3">+3</option>
+      <option value="2">+2</option>
+      <option value="1">+1</option>
+      <option value="0">0</option>
+      <option value="-1">-1</option>
+      <option value="-2">-2</option>
+      <option value="-3">-3</option>
+      <option value="-4">-4</option>
+      <option value="-5">-5</option>
+      <option value="-6">-6</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="burn_check-atk">やけど</label>
+    <input type="checkbox" id="burn_check-atk" name="burn-atk" >
+  </div>
+
+  <h2>防御サイド</h2>
+
+  <div class="inputs_wrapper">
+    <label for="pokemon_select-def">ポケモン</label>
+    <select id="pokemon_select-def" name="pokemon-def">
+      <option value="">選択してください</option>
+    </select>
+  </div>
+
+  <div class="inputs_wrapper">
+    <label for="rank_select-def">B/Dランク</label>
+    <select id="rank_select-def" name="rank-def">
+      <option value="">選択してください</option>
+      <option value="6">+6</option>
+      <option value="5">+5</option>
+      <option value="4">+4</option>
+      <option value="3">+3</option>
+      <option value="2">+2</option>
+      <option value="1">+1</option>
+      <option value="0">0</option>
+      <option value="-1">-1</option>
+      <option value="-2">-2</option>
+      <option value="-3">-3</option>
+      <option value="-4">-4</option>
+      <option value="-5">-5</option>
+      <option value="-6">-6</option>
+    </select>
+  </div>
+
+  <button type="button" id="calculate_damage_button">計算する</button>
+</div>
+</body>
+</html>
