@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>TTK API</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
 <div class="container">
@@ -12,6 +13,10 @@
     <label for="pokemon_select-register">ポケモン</label>
     <select id="pokemon_select-register" name="pokemon">
       <option value="">選択してください</option>
+      <option value="">ピカチュウ</option>
+      <option value="">フシギダネ</option>
+      <option value="">ゼニガメ</option>
+      <option value="">ヒトカゲ</option>
     </select>
   </div>
 
@@ -26,6 +31,10 @@
     <label for="nature_select-register">せいかく</label>
     <select id="nature_select-register" name="nature">
       <option value="">選択してください</option>
+      <option value="">いじっぱり</option>
+      <option value="">ひかえめ</option>
+      <option value="">ずぶとい</option>
+      <option value="">おだやか</option>
     </select>
   </div>
 
@@ -33,6 +42,9 @@
     <label for="item_select-register">もちもの</label>
     <select id="item_select-register" name="item">
       <option value="">選択してください</option>
+      <option value="">1.1倍持ち物</option>
+      <option value="">1.3倍持ち物</option>
+      <option value="">1.5倍持ち物</option>
     </select>
   </div>
 
@@ -40,6 +52,10 @@
     <label for="move1_select-register">わざ1</label>
     <select id="move1_select-register" name="move1">
       <option value="">選択してください</option>
+      <option value="">10まんボルト</option>
+      <option value="">ギガドレイン</option>
+      <option value="">なみのり</option>
+      <option value="">かえんほうしゃ</option>
     </select>
   </div>
 
@@ -47,6 +63,10 @@
     <label for="move2_select-register">わざ2</label>
     <select id="move2_select-register" name="move2">
       <option value="">選択してください</option>
+      <option value="">かみなり</option>
+      <option value="">リーフストーム</option>
+      <option value="">ハイドロポンプ</option>
+      <option value="">だいもんじ</option>
     </select>
   </div>
 
@@ -54,6 +74,10 @@
     <label for="move3_select-register">わざ3</label>
     <select id="move3_select-register" name="move3">
       <option value="">選択してください</option>
+      <option value="">でんこうせっか</option>
+      <option value="">たいあたり</option>
+      <option value="">おんがえし</option>
+      <option value="">のしかかり</option>
     </select>
   </div>
 
@@ -61,68 +85,72 @@
     <label for="move4_select-register">わざ4</label>
     <select id="move4_select-register" name="move4">
       <option value="">選択してください</option>
+      <option value="">アイアンテール</option>
+      <option value="">ヘドロばくだん</option>
+      <option value="">ドラゴンクロー</option>
+      <option value="">れいとうビーム</option>
     </select>
   </div>
 
   <div class="inputs_wrapper">
     <label for="effort_h_input-register">努力値H</label>
-    <input type="number" id="effort_h_input-register" name="effort_h" max="252">
+    <input type="number" id="effort_h_input-register" name="effort_h" max="252" min="0">
   </div>
 
   <div class="inputs_wrapper">
     <label for="effort_a_input-register">努力値A</label>
-    <input type="number" id="effort_a_input-register" name="effort_a" max="252">
+    <input type="number" id="effort_a_input-register" name="effort_a" max="252" min="0">
 
   </div>
 
   <div class="inputs_wrapper">
     <label for="effort_b_input-register">努力値B</label>
-    <input type="number" id="effort_b_input-register" name="effort_b" max="252">
+    <input type="number" id="effort_b_input-register" name="effort_b" max="252"  min="0">
   </div>
 
   <div class="inputs_wrapper">
     <label for="effort_c_input-register">努力値C</label>
-    <input type="number" id="effort_c_input-register" name="effort_c" max="252">
+    <input type="number" id="effort_c_input-register" name="effort_c" max="252"  min="0">
   </div>
 
   <div class="inputs_wrapper">
     <label for="effort_d_input-register">努力値D</label>
-    <input type="number" id="effort_d_input-register" name="effort_d" max="252">
+    <input type="number" id="effort_d_input-register" name="effort_d" max="252"  min="0">
   </div>
 
   <div class="inputs_wrapper">
     <label for="effort_s_input-register">努力値S</label>
-    <input type="number" id="effort_s_input-register" name="effort_s" max="252">
+    <input type="number" id="effort_s_input-register" name="effort_s" max="252"  min="0">
   </div>
 
   <div class="inputs_wrapper">
     <label for="individual_h_input-register">個体値H</label>
-    <input type="number" id="individual_h_input-register" name="individual_h" max="31">
+    <input type="number" id="individual_h_input-register" name="individual_h" max="31"  min="0">
   </div>
 
   <div class="inputs_wrapper">
     <label for="individual_a_input-register">個体値A</label>
-    <input type="number" id="individual_a_input-register" name="individual_a" max="31">
+    <input type="number" id="individual_a_input-register" name="individual_a" max="31"  min="0">
   </div>
 
   <div class="inputs_wrapper">
     <label for="individual_b_input-register">個体値B</label>
-    <input type="number" id="individual_b_input-register" name="individual_b" max="31">
+    <input type="number" id="individual_b_input-register" name="individual_b" max="31"  min="0">
   </div>
 
   <div class="inputs_wrapper">
     <label for="individual_c_input-register">個体値C</label>
-    <input type="number" id="individual_c_input-register" name="individual_c" max="31">
+    <input type="number" id="individual_c_input-register" name="individual_c" max="31"  min="0">
   </div>
 
   <div class="inputs_wrapper">
     <label for="individual_d_input-register">個体値D</label>
-    <input type="number" id="individual_d_input-register" name="individual_d" max="31">
+    <input type="number" id="individual_d_input-register" name="individual_d" max="31"  min="0">
   </div>
 
   <div class="inputs_wrapper">
     <label for="individual_s_input-register">個体値S</label>
-    <input type="number" id="individual_s_input-register" name="individual_s" max="31">
+    <input type="number" id="individual_s_input-register" name="individual_s" max="31"  min="0">
   </div>
 
   <button type="button" id="register_pokemon_button">登録する</button>
